@@ -1,0 +1,3335 @@
+fileFormatVersion: 2
+guid: da6fb8d7edf91e94bba7a21a76ffc7c4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f1c8f69d41ebc42a29ce22cc2e053a
+      internalID: 253356072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5ac175b1729214f90eedc5c068aa74
+      internalID: -37934669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232cb96d185271a41a2d010a682df7a8
+      internalID: 87220304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1b163fc2eeeaf41862c3aa68f94f7b
+      internalID: 1857853796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dade1bbb6d5d87645bcb3024083d9b3e
+      internalID: 1869475694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633d1b8cf2efe7540998a04690005892
+      internalID: 1647763552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c1c7a158a84c042b88db4131340af2
+      internalID: -425431478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1932
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3d07b27de1df84f9ab74b00c992778
+      internalID: -793454395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80a676ff62257845aa7a2051e7b5dad
+      internalID: -1503460771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37520e08ed6266947bcec698def2bcb6
+      internalID: -1609912777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad549bd081f433478d54ceef6f4b9e9
+      internalID: 335578848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838f31ff4fb6fb84a9e44114c002793d
+      internalID: 1856172130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1e0036ea039db4fbfc09dc6d5f3f5a
+      internalID: -143907771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057f069a757532842a4dbf00734ff446
+      internalID: -1174620974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0d95ca4592aba46801c89d94f9f20e
+      internalID: -1267067700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1848
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560a60ecd72d1ee448b002a0b6174f04
+      internalID: 1759385059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451db85049d9a614681c0cdfbdd54e9d
+      internalID: 1986840261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda034977776cbc4986f6d25c3f7aa6a
+      internalID: -1660363387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f381dbf4be7edec47a9bcd8b3dab6ad4
+      internalID: -1882128896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e0d89f43aac784faa1fb9ecd71af46
+      internalID: 1106062489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5d0745debaac2438e3678719f927ba
+      internalID: -1282945187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e38a58549baf1747bd47ba54a7b8bf2
+      internalID: 836254436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7ad64e80c4fc541abc5c676fda4f4e
+      internalID: -169821990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1764
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf7c8677e47f8b41859fab39ed0a82e
+      internalID: 240463343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf12d1c19b9aba4e8957e31926af2d2
+      internalID: -1579672678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1680
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1146128716707344ca38b1fd2c1c8dc7
+      internalID: 522056930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1680
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9abf180355d32f4ab3fc1bb69d1f54b
+      internalID: -2096722568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1680
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2e4faf23a06294b9dfa943cea311dc
+      internalID: -475046077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cc0bdde45c0734c9ccda32de7f84db
+      internalID: -1002871999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901de04e826972f40a44868d673726d0
+      internalID: 886106035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b3ec9fdb074f34da63f4a16ee8a9e5
+      internalID: 1881390184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6281416fa0547134fb9c976404d7153f
+      internalID: -1693671697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4e5c1d31cf5d24a8ba3a0a5759a359
+      internalID: 787350701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7f661fc9f137f40bac5b9c3d81009b
+      internalID: 2129173820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18380319c474eeb4997de85fe36d866b
+      internalID: 2022954874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed530c0c55e8c94439950eefe9e4ab1f
+      internalID: 1585332234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5c1deebf821a84c8c6c17f604d0f5f
+      internalID: -2016444531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c3e47969aa5cb48b62dcaa2b365520
+      internalID: 501152055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1572c4af2f374a04e86bfc722b68e26b
+      internalID: -282840069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1596
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8801b6f6533491f49abcccca48f8506a
+      internalID: 475762516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1512
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df3b50910a570645848505536425fe8
+      internalID: -544637629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1428
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddedf33ab25dba4685a99c3ac91151b
+      internalID: 1876329191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1428
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26f768bfd6ce7342b2ee9fef43813cd
+      internalID: -836306220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1428
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e00c51b2c66794c9a261011c50b71a
+      internalID: -1211664951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0687003860c6461428a43ad33b69111a
+      internalID: 423971983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1260
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe019f6c2e42484db4b99e38cd8382a
+      internalID: 715078598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1260
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e493cb29ed4ad4d81ccaf2c523141c
+      internalID: 411060335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1260
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42208e7999fa3041b4c3b77ac707c9d
+      internalID: -1180647878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1260
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce8e1e8521968d40a49c49325ee074c
+      internalID: -855299420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1176
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a988efe14ec7d9b4b8b257dbb74ac16d
+      internalID: 657603658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1176
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f37dffbb3cdffc46b952ad00ca2f173
+      internalID: 1578082562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1176
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d042b17f6308b344baffe02ad88973b3
+      internalID: -204349227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1176
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ec578a9069cf7418ca3fde079e8513
+      internalID: 1661786829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea96e5b6b25c98428e1e9584eac6884
+      internalID: -1390247714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1092
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb92a45d949f20b45bcb7b4095f03494
+      internalID: -1470913027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1092
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ba8d5bb1c981049beaf3230046e14b
+      internalID: -2147140168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1092
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c5906b5d22514489f189433036f10e
+      internalID: 1800187443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c8aca97a7051448b781058e886f8a7
+      internalID: 563191806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6088b49761be7304a9c1f1156b8ca3a5
+      internalID: -167533364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c64fffdb2fa34c43ad9cb9a1ebcb65d
+      internalID: -330213419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0f88fadafd0e14ca5b660fd12ef7cd
+      internalID: -1233456879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b7bc5e2ecd961459f2d22f92db5650
+      internalID: -2057684737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3c05b9565741547a2f81adb2c68df1
+      internalID: 2065562173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051e677953eab774c8491b81448f0d87
+      internalID: -606775347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1008
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31672fe77147a554e9534aad6d30dbf9
+      internalID: -179282256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f94700061c0954b83e4f9100453af2
+      internalID: -906802703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 924
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade22746dbc842f40a290fc405c493cc
+      internalID: 46606135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 924
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7471cac051572e4798dd0877d2df489
+      internalID: -1920896057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 924
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f85cee3c9139b4ca3f6241c45c12fa
+      internalID: 954005555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 924
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c284262be1c536a41a66fd9c059d3322
+      internalID: -244229489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af576a7286481d84383656ad098cbd65
+      internalID: -339507891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 840
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7dcb75c5d99f8449a1514e88958d49
+      internalID: -916455340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8efb9533048ba147a3330f5e067f9e1
+      internalID: 563468751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d9b0988c8c57408bf6669e18e24c3
+      internalID: 1803509985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9128c3626ff15a4fa4090d95c25c024
+      internalID: -1266209413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a32f06171d9bea4b9f805634ae0ead5
+      internalID: -1032760187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bd129d71138ea4fa2e597138c20f07
+      internalID: 1661781679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 756
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d53c2669099ee045bb12b0af9a8a315
+      internalID: -1767584920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c37992745fdaf84e87bc78cb4af1ddb
+      internalID: 1298278931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd91afb1826c6434bb5872db10237994
+      internalID: 1373477570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7684ab69a987c664aa56c6c65250584e
+      internalID: 1519385982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0521942029035647830406337d28c92
+      internalID: 1069903801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4fa81e94fc3ca44948edb1dd55bf9c
+      internalID: 532982576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4587a1174505ac9488bf42d535cfac53
+      internalID: 1766574379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 672
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce6b7fc121d4dd4bb8721db007e8267
+      internalID: -427595852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719c03c3f33c32642b2792a13be1e611
+      internalID: -2041868531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2da6ee2575a144381dfa34a959f44d
+      internalID: -1855512257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f12c0e311e9e474f9d7a09699a9a43c
+      internalID: 1451774438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40f4831079d1448a8f6c191b155332
+      internalID: 290109271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193dfcf3296a7e9459d0b80397b7e4c0
+      internalID: 1808445287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d447820328f3a3478e1a1e53cbe21eb
+      internalID: 1117171707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d448ab5b319ad46a32655f963981dd
+      internalID: -1560423524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 588
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580f90914cd90c7488f696a065816e80
+      internalID: 915354083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7d9a3b0387c2041977a7c36210ac8d
+      internalID: 1258723800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd4b034830580649bf4e01b2c830955
+      internalID: -282141462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e0691ec4fd71240b7078759129cae3
+      internalID: -516878077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebf2ca727c48794581fa7eddf175bb1
+      internalID: 479229612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec53b662bd5eef44d8af54b22bc381e8
+      internalID: 1853642310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fcb5354b4cbf744ba2f0b27c48fbc8
+      internalID: -434732896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 504
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5ea69c209e3de44be1801f6cf9c9af
+      internalID: -1959488128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5788f9cd4b0024f45b2386bffb52059c
+      internalID: -1252250341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596357df67db8764390fcf19c21d6f69
+      internalID: 1340106788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff5da59bd28c8a4688ecddebf786a77
+      internalID: -1649470058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea868053262555f4ba876536c854e65e
+      internalID: 1095801423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8650a005442794484c528037119508
+      internalID: -1712310368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 420
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348315dc2b92b5a4cae4e4ddae28b71a
+      internalID: 2067392051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bab3208dfbf6254bbfe42c3dbf76565
+      internalID: 63773752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 336
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a785389ff5edaab489ea8daf0ab13f08
+      internalID: -903543427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 336
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457eab4ec9cc7bd4495e8b049598044e
+      internalID: 1054520357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 336
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305e1c8987c02b84eb40bd87a076663e
+      internalID: -2028016637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 336
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a72d8d6a4518e439f0c6bee1d68469
+      internalID: -724937706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6e567f5df3230459e6069178dd2ac0
+      internalID: 864770527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6dd640a8014bf4eaa028a7f8ff0368
+      internalID: -1001102955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f018b3b5dd0d5f24cbcee2c9b083ec82
+      internalID: -1870206599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fc5123b9db9a844b8726bc7ab45309
+      internalID: -227202474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b55f04523334b4ba1ce7e3f6b35669
+      internalID: 218091542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72b58ee13298744cac2d6946b923700
+      internalID: -975228088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c4294606dd7a747ad7f067ddd82ff5
+      internalID: 1233707578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07ce9070c7b74e4f96e41142ff27063
+      internalID: -643976475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebea7d85a80d4a46aa64a8a9c07711d
+      internalID: 1783745829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5c8861613f50f419cf0f3e2190d7b2
+      internalID: 1579181664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 252
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea225e6459fe784f9fdc94338b35cde
+      internalID: -1731143153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b309c0ccd71e0864f990bc22d2745427
+      internalID: -466981524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd554125d4e8eb941b6191c235049887
+      internalID: -876466536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cac0160c9380b14d8a401fc2a638565
+      internalID: 2118641699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f129ad23df42cb94ba72f1751dbff746
+      internalID: 2066837192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb909789329704341aae8f408f560f09
+      internalID: -1647828655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247fe5f132b759f45a70eec5e0e4b014
+      internalID: 155499534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 168
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8857208edc7ed488bc4c68cdbf9bbd
+      internalID: -192457186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9938bf53dbd9c824184c980c45830118
+      internalID: 1193352081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 84
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbecd005f8d5efa4cbf6807dfbf4e5ed
+      internalID: -216212189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 84
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c839f616bfac74d8cf22efd44111f5
+      internalID: 1143602800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 84
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2cf28c0be28c34ca66f349e8e0cb37
+      internalID: -947433020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 84
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a53bde4d3010a24db80b6e6327c54cd
+      internalID: -1451666798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00ff1cb060fb5f45ad66628b54dac8c
+      internalID: 971132900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4300983842c4d4849babefa9023b0f95
+      internalID: 829813573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1578db53ed639ab41ba354553ae8166f
+      internalID: -1912197379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919e3c3b15a36da4a8aced3e9a68e1b8
+      internalID: 1021160223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66b19c4e3c4fff4a8da696cad27994c
+      internalID: -49373900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f751b62ed6d964d859763d65f41f00
+      internalID: 4780112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb07211ec28e9a146a87941794bcba87
+      internalID: 183988116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8a25d78af0873468d6a6f03f033982
+      internalID: -1034531096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6df622435e01a4299565af60129e4e
+      internalID: 1848603821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea888aff653b84745a5da40f07e24917
+      internalID: -552966127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac23ff2f25cc124496823f008fce389
+      internalID: 1694069637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viking(Ice Axe)-Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 0
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc2dff0473b1ea468108b0dc533ab2d
+      internalID: -836572040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Viking(Ice Axe)-Sheet_0: 253356072
+      Viking(Ice Axe)-Sheet_1: -37934669
+      Viking(Ice Axe)-Sheet_10: 335578848
+      Viking(Ice Axe)-Sheet_100: -1252250341
+      Viking(Ice Axe)-Sheet_101: 1340106788
+      Viking(Ice Axe)-Sheet_102: -1649470058
+      Viking(Ice Axe)-Sheet_103: 1095801423
+      Viking(Ice Axe)-Sheet_104: -1712310368
+      Viking(Ice Axe)-Sheet_105: 2067392051
+      Viking(Ice Axe)-Sheet_106: 63773752
+      Viking(Ice Axe)-Sheet_107: -903543427
+      Viking(Ice Axe)-Sheet_108: 1054520357
+      Viking(Ice Axe)-Sheet_109: -2028016637
+      Viking(Ice Axe)-Sheet_11: 1856172130
+      Viking(Ice Axe)-Sheet_110: -724937706
+      Viking(Ice Axe)-Sheet_111: 864770527
+      Viking(Ice Axe)-Sheet_112: -1001102955
+      Viking(Ice Axe)-Sheet_113: -1870206599
+      Viking(Ice Axe)-Sheet_114: -227202474
+      Viking(Ice Axe)-Sheet_115: 218091542
+      Viking(Ice Axe)-Sheet_116: -975228088
+      Viking(Ice Axe)-Sheet_117: 1233707578
+      Viking(Ice Axe)-Sheet_118: -643976475
+      Viking(Ice Axe)-Sheet_119: 1783745829
+      Viking(Ice Axe)-Sheet_12: -143907771
+      Viking(Ice Axe)-Sheet_120: 1579181664
+      Viking(Ice Axe)-Sheet_121: -1731143153
+      Viking(Ice Axe)-Sheet_122: -466981524
+      Viking(Ice Axe)-Sheet_123: -876466536
+      Viking(Ice Axe)-Sheet_124: 2118641699
+      Viking(Ice Axe)-Sheet_125: 2066837192
+      Viking(Ice Axe)-Sheet_126: -1647828655
+      Viking(Ice Axe)-Sheet_127: 155499534
+      Viking(Ice Axe)-Sheet_128: -192457186
+      Viking(Ice Axe)-Sheet_129: 1193352081
+      Viking(Ice Axe)-Sheet_13: -1174620974
+      Viking(Ice Axe)-Sheet_130: -216212189
+      Viking(Ice Axe)-Sheet_131: 1143602800
+      Viking(Ice Axe)-Sheet_132: -947433020
+      Viking(Ice Axe)-Sheet_133: -1451666798
+      Viking(Ice Axe)-Sheet_134: 971132900
+      Viking(Ice Axe)-Sheet_135: 829813573
+      Viking(Ice Axe)-Sheet_136: -1912197379
+      Viking(Ice Axe)-Sheet_137: 1021160223
+      Viking(Ice Axe)-Sheet_138: -49373900
+      Viking(Ice Axe)-Sheet_139: 4780112
+      Viking(Ice Axe)-Sheet_14: -1267067700
+      Viking(Ice Axe)-Sheet_140: 183988116
+      Viking(Ice Axe)-Sheet_141: -1034531096
+      Viking(Ice Axe)-Sheet_142: 1848603821
+      Viking(Ice Axe)-Sheet_143: -552966127
+      Viking(Ice Axe)-Sheet_144: 1694069637
+      Viking(Ice Axe)-Sheet_145: -836572040
+      Viking(Ice Axe)-Sheet_15: 1759385059
+      Viking(Ice Axe)-Sheet_16: 1986840261
+      Viking(Ice Axe)-Sheet_17: -1660363387
+      Viking(Ice Axe)-Sheet_18: -1882128896
+      Viking(Ice Axe)-Sheet_19: 1106062489
+      Viking(Ice Axe)-Sheet_2: 87220304
+      Viking(Ice Axe)-Sheet_20: -1282945187
+      Viking(Ice Axe)-Sheet_21: 836254436
+      Viking(Ice Axe)-Sheet_22: -169821990
+      Viking(Ice Axe)-Sheet_23: 240463343
+      Viking(Ice Axe)-Sheet_24: -1579672678
+      Viking(Ice Axe)-Sheet_25: 522056930
+      Viking(Ice Axe)-Sheet_26: -2096722568
+      Viking(Ice Axe)-Sheet_27: -475046077
+      Viking(Ice Axe)-Sheet_28: -1002871999
+      Viking(Ice Axe)-Sheet_29: 886106035
+      Viking(Ice Axe)-Sheet_3: 1857853796
+      Viking(Ice Axe)-Sheet_30: 1881390184
+      Viking(Ice Axe)-Sheet_31: -1693671697
+      Viking(Ice Axe)-Sheet_32: 787350701
+      Viking(Ice Axe)-Sheet_33: 2129173820
+      Viking(Ice Axe)-Sheet_34: 2022954874
+      Viking(Ice Axe)-Sheet_35: 1585332234
+      Viking(Ice Axe)-Sheet_36: -2016444531
+      Viking(Ice Axe)-Sheet_37: 501152055
+      Viking(Ice Axe)-Sheet_38: -282840069
+      Viking(Ice Axe)-Sheet_39: 475762516
+      Viking(Ice Axe)-Sheet_4: 1869475694
+      Viking(Ice Axe)-Sheet_40: -544637629
+      Viking(Ice Axe)-Sheet_41: 1876329191
+      Viking(Ice Axe)-Sheet_42: -836306220
+      Viking(Ice Axe)-Sheet_43: -1211664951
+      Viking(Ice Axe)-Sheet_44: 423971983
+      Viking(Ice Axe)-Sheet_45: 715078598
+      Viking(Ice Axe)-Sheet_46: 411060335
+      Viking(Ice Axe)-Sheet_47: -1180647878
+      Viking(Ice Axe)-Sheet_48: -855299420
+      Viking(Ice Axe)-Sheet_49: 657603658
+      Viking(Ice Axe)-Sheet_5: 1647763552
+      Viking(Ice Axe)-Sheet_50: 1578082562
+      Viking(Ice Axe)-Sheet_51: -204349227
+      Viking(Ice Axe)-Sheet_52: 1661786829
+      Viking(Ice Axe)-Sheet_53: -1390247714
+      Viking(Ice Axe)-Sheet_54: -1470913027
+      Viking(Ice Axe)-Sheet_55: -2147140168
+      Viking(Ice Axe)-Sheet_56: 1800187443
+      Viking(Ice Axe)-Sheet_57: 563191806
+      Viking(Ice Axe)-Sheet_58: -167533364
+      Viking(Ice Axe)-Sheet_59: -330213419
+      Viking(Ice Axe)-Sheet_6: -425431478
+      Viking(Ice Axe)-Sheet_60: -1233456879
+      Viking(Ice Axe)-Sheet_61: -2057684737
+      Viking(Ice Axe)-Sheet_62: 2065562173
+      Viking(Ice Axe)-Sheet_63: -606775347
+      Viking(Ice Axe)-Sheet_64: -179282256
+      Viking(Ice Axe)-Sheet_65: -906802703
+      Viking(Ice Axe)-Sheet_66: 46606135
+      Viking(Ice Axe)-Sheet_67: -1920896057
+      Viking(Ice Axe)-Sheet_68: 954005555
+      Viking(Ice Axe)-Sheet_69: -244229489
+      Viking(Ice Axe)-Sheet_7: -793454395
+      Viking(Ice Axe)-Sheet_70: -339507891
+      Viking(Ice Axe)-Sheet_71: -916455340
+      Viking(Ice Axe)-Sheet_72: 563468751
+      Viking(Ice Axe)-Sheet_73: 1803509985
+      Viking(Ice Axe)-Sheet_74: -1266209413
+      Viking(Ice Axe)-Sheet_75: -1032760187
+      Viking(Ice Axe)-Sheet_76: 1661781679
+      Viking(Ice Axe)-Sheet_77: -1767584920
+      Viking(Ice Axe)-Sheet_78: 1298278931
+      Viking(Ice Axe)-Sheet_79: 1373477570
+      Viking(Ice Axe)-Sheet_8: -1503460771
+      Viking(Ice Axe)-Sheet_80: 1519385982
+      Viking(Ice Axe)-Sheet_81: 1069903801
+      Viking(Ice Axe)-Sheet_82: 532982576
+      Viking(Ice Axe)-Sheet_83: 1766574379
+      Viking(Ice Axe)-Sheet_84: -427595852
+      Viking(Ice Axe)-Sheet_85: -2041868531
+      Viking(Ice Axe)-Sheet_86: -1855512257
+      Viking(Ice Axe)-Sheet_87: 1451774438
+      Viking(Ice Axe)-Sheet_88: 290109271
+      Viking(Ice Axe)-Sheet_89: 1808445287
+      Viking(Ice Axe)-Sheet_9: -1609912777
+      Viking(Ice Axe)-Sheet_90: 1117171707
+      Viking(Ice Axe)-Sheet_91: -1560423524
+      Viking(Ice Axe)-Sheet_92: 915354083
+      Viking(Ice Axe)-Sheet_93: 1258723800
+      Viking(Ice Axe)-Sheet_94: -282141462
+      Viking(Ice Axe)-Sheet_95: -516878077
+      Viking(Ice Axe)-Sheet_96: 479229612
+      Viking(Ice Axe)-Sheet_97: 1853642310
+      Viking(Ice Axe)-Sheet_98: -434732896
+      Viking(Ice Axe)-Sheet_99: -1959488128
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
