@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPatrol : Enemy
+public class EnemyPatrol : EnemyBase
 {
     [Header("Move")]
     [SerializeField] private float moveSpeed;

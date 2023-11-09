@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Image hpImage;
     [SerializeField] private Image hpEffectImage;
-    private float hurtSpeed = 0.001f;
+    private float hurtSpeed = 0.01f;
 
     public void GetAnimCount(bool attack, int counter)
     {

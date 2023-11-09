@@ -13,7 +13,7 @@ public class EnemyBase : MonoBehaviour
 
     [SerializeField] private Image hpImage;
     [SerializeField] private Image hpEffectImage;
-    [SerializeField] private float hurtSpeed = 0.001f;
+    [SerializeField] private float hurtSpeed = 0.01f;
 
     protected virtual void Start()
     {
