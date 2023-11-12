@@ -17,7 +17,7 @@ public class BulletEnemy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             rb.velocity = Vector2.zero;
-            collision.GetComponent<PlayerController>().TakeDamage(damage);
+            collision.GetComponent<PlayerStats>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }

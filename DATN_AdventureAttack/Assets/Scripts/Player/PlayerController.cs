@@ -16,11 +16,6 @@ public class PlayerController : MonoBehaviour
     private float dashCooldownTimer;//Biến trung gian giảm dần thời gian hồi tốc biến
     private bool doubleJump;
 
-    [Header("State")]
-    [SerializeField] private float maxHealth;
-    [SerializeField] private float damage;
-    private float currentHealth;
-
     [Header("Check")]
     [SerializeField] private float groundCheckDistance;//Khoảng cách đến điểm kiểm tra
     [SerializeField] private LayerMask whatIsGround;//Layer của vật thể
@@ -33,8 +28,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] protected Transform pointBullet;
     [SerializeField] private float bulletSpeed;
 
-    [SerializeField] private GameObject floatingText;
-
     private float xInput;
     private bool isGround;
     private bool isAttack;
@@ -46,12 +39,12 @@ public class PlayerController : MonoBehaviour
     private int facingDir = 1;
     private bool facingRight = true;
 
+    private PlayerStats playerStats;
+
     private Rigidbody2D rb;
     private Animator anim;
 
-    [SerializeField] private Image hpImage;
-    [SerializeField] private Image hpEffectImage;
-    private float hurtSpeed = 0.01f;
+    
 
     public void GetAnimCount(bool attack, int counter)
     {
@@ -72,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        currentHealth = maxHealth;
+        playerStats = GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -83,8 +76,6 @@ public class PlayerController : MonoBehaviour
         InputKey();
         
         PlayerAnimation();
-
-        HealthBar();
 
         timeCounter -= Time.deltaTime;
 
@@ -101,32 +92,41 @@ public class PlayerController : MonoBehaviour
     {
         xInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.Z))
+        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             Dash();
         }
-        if (Input.GetKeyDown(KeyCode.Q) && isGround)
+        else if (Input.GetKeyDown(KeyCode.Q) && isGround && playerStats.CanAttack())
         {
+            playerStats.AttackCombo();
             Attack();
         }
-        if (Input.GetKeyDown(KeyCode.E) && isGround)
+        else if (Input.GetKeyDown(KeyCode.E) && isGround && playerStats.CanAttack4())
         {
+            playerStats.Attack4();
             attackStarted = true;
             anim.SetTrigger("Attack4");
         }
-        if (Input.GetKeyDown(KeyCode.R) && isGround)
+        else if (Input.GetKeyDown(KeyCode.R) && isGround && playerStats.CanAttack5())
         {
+            playerStats.Attack5();
             attackStarted = true;
             anim.SetTrigger("Attack5");
         }
-        if (Input.GetKeyDown(KeyCode.T) && !isGround)
+        else if (Input.GetKeyDown(KeyCode.T) && !isGround && playerStats.CanAttack6())
         {
+            playerStats.Attack6();
             anim.SetTrigger("Attack6");
             doubleJump = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            playerStats.UsePotionHealth();
         }
     }
 
@@ -191,7 +191,7 @@ public class PlayerController : MonoBehaviour
         {
             foreach (Collider2D enemy in colliders)
             {
-                enemy.GetComponent<EnemyBase>().TakeDamage(damage);
+                enemy.GetComponent<EnemyBase>().TakeDamage(playerStats.damage);
             }
         }
     }
@@ -211,31 +211,6 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("Dash", dashTime > 0);
         anim.SetBool("Attack", isAttack);
         anim.SetInteger("ComboCounter", comboCounter);
-    }
-
-    public void TakeDamage(float dame)
-    {
-        GameObject point = Instantiate(floatingText, transform.position, Quaternion.identity);
-        point.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + dame;
-        currentHealth -= dame;
-        if (currentHealth <= 0)
-        {
-            Death();
-        }
-    }
-
-    private void HealthBar()
-    {
-        hpImage.fillAmount = currentHealth / maxHealth;
-
-        if (hpEffectImage.fillAmount > hpImage.fillAmount)
-        {
-            hpEffectImage.fillAmount -= hurtSpeed;
-        }
-        else
-        {
-            hpEffectImage.fillAmount = hpImage.fillAmount;
-        }
     }
 
     private void Death()

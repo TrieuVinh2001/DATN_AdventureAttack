@@ -102,7 +102,7 @@ public class EnemyPatrol : EnemyBase
 
     private void MovePoint()
     {
-        if (transform.position == target.position)
+        if (transform.position.x == target.position.x)
         {
             pointIndex++;
             if (pointIndex >= point.Length)

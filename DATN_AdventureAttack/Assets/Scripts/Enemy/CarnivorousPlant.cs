@@ -75,7 +75,7 @@ public class CarnivorousPlant : EnemyBase
     {
         if (target != null)
         {
-            target.GetComponent<PlayerController>().TakeDamage(damage);
+            target.GetComponent<PlayerStats>().TakeDamage(damage);
         }
     }
 

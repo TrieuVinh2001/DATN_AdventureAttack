@@ -10,7 +10,7 @@ public class EnemyAttackCollider : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().TakeDamage(damage);
+            collision.GetComponent<PlayerStats>().TakeDamage(damage);
         }
     }
 }
