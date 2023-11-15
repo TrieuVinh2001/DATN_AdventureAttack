@@ -1,0 +1,7 @@
+{
+    "maxHP": 50.0,
+    "maxMP": 20.0,
+    "currentHP": 0.0,
+    "currentMP": 0.0,
+    "damage": 1.0
+}

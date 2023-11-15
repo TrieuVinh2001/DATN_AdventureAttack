@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -42,15 +43,16 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Image hpEffectImage;
     [SerializeField] private Image mpImage;
     [SerializeField] private Image mpEffectImage;
+    [SerializeField] private float hurtSpeed = 0.005f;
     [SerializeField] private TextMeshProUGUI hpText;
     [SerializeField] private TextMeshProUGUI mpText;
 
 
-    private float hurtSpeed = 0.01f;
-
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = SaveData.instance.data.maxHP;
+        maxMana = SaveData.instance.data.maxMP;
         currentHealth = maxHealth;
         currentMana = maxMana;
         StartCoroutine(ManaRecovery());
@@ -105,6 +107,7 @@ public class PlayerStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Death();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Destroy(gameObject);
         }
     }

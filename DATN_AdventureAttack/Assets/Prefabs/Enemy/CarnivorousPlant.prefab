@@ -125,7 +125,7 @@ MonoBehaviour:
   floatingText: {fileID: 7756940702022969286, guid: 22679ffcee8fcad4694a0a8bcb92c56d, type: 3}
   hpImage: {fileID: 7976788661543578304}
   hpEffectImage: {fileID: 7976788661126328547}
-  hurtSpeed: 0.001
+  hurtSpeed: 0.005
   bulletSpeed: 2
   damage: 2
   zoneAttack: 1
