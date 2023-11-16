@@ -8,11 +8,15 @@ using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     [Header("Stats")]
-    [SerializeField] private float maxHealth;
-    [SerializeField] private float maxMana;
+    [SerializeField] private float maxHP;
+    [SerializeField] private float maxMP;
     public float damage;
     private float currentHealth;
     private float currentMana;
+
+    [SerializeField] private int level;
+    [SerializeField] private int currentExp;
+    [SerializeField] private int expToLevel;
 
     private float timeCooldownAttack;
 
@@ -43,18 +47,24 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Image hpEffectImage;
     [SerializeField] private Image mpImage;
     [SerializeField] private Image mpEffectImage;
+    [SerializeField] private Image expImage;
     [SerializeField] private float hurtSpeed = 0.005f;
     [SerializeField] private TextMeshProUGUI hpText;
     [SerializeField] private TextMeshProUGUI mpText;
+    [SerializeField] private TextMeshProUGUI expText;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        maxHealth = SaveData.instance.data.maxHP;
-        maxMana = SaveData.instance.data.maxMP;
-        currentHealth = maxHealth;
-        currentMana = maxMana;
+        DataBase data = SaveData.instance.data;
+        maxHP = data.maxHP;
+        maxMP = data.maxMP;
+        level = data.level;
+        currentExp = data.currentExp;
+        expToLevel = data.expToLevel;
+        currentHealth = maxHP;
+        currentMana = maxMP;
         StartCoroutine(ManaRecovery());
     }
 
@@ -63,6 +73,7 @@ public class PlayerStats : MonoBehaviour
     {
         HealthBar();
         ManaBar();
+        ExpBar();
         timeCooldown4 -= Time.deltaTime;
         timeCooldown5 -= Time.deltaTime;
         timeCooldown6 -= Time.deltaTime;
@@ -79,7 +90,7 @@ public class PlayerStats : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(3f);
-            if (currentMana + 1 <= maxMana)
+            if (currentMana + 1 <= maxMP)
             {
                 currentMana += 1;
             }
@@ -89,9 +100,9 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionHealth()
     {
-        if (currentHealth + 10 > maxHealth)
+        if (currentHealth + 10 > maxHP)
         {
-            currentHealth = maxHealth;
+            currentHealth = maxHP;
         }
         else
         {
@@ -99,7 +110,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage)//Nhận sát thương
     {
         GameObject point = Instantiate(floatingText, transform.position, Quaternion.identity);
         point.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + damage;
@@ -114,8 +125,8 @@ public class PlayerStats : MonoBehaviour
 
     private void HealthBar()
     {
-        hpImage.fillAmount = currentHealth / maxHealth;
-        hpText.text = "HP: " + currentHealth + "/" + maxHealth;
+        hpImage.fillAmount = currentHealth / maxHP;
+        hpText.text = "HP: " + currentHealth + "/" + maxHP;
 
         if (hpEffectImage.fillAmount > hpImage.fillAmount)
         {
@@ -129,8 +140,8 @@ public class PlayerStats : MonoBehaviour
 
     private void ManaBar()
     {
-        mpImage.fillAmount = currentMana / maxMana;
-        mpText.text = "MP: " + currentMana + "/" + maxMana;
+        mpImage.fillAmount = currentMana / maxMP;
+        mpText.text = "MP: " + currentMana + "/" + maxMP;
 
         if (mpEffectImage.fillAmount > mpImage.fillAmount)
         {
@@ -140,6 +151,12 @@ public class PlayerStats : MonoBehaviour
         {
             mpEffectImage.fillAmount = mpImage.fillAmount;
         }
+    }
+
+    private void ExpBar()
+    {
+        expImage.fillAmount = (float)currentExp / expToLevel;
+        expText.text = "LV:" + level + "+" + Mathf.RoundToInt(((float)currentExp /expToLevel) * 100) + "%";
     }
 
     public void AttackCombo()
@@ -209,5 +226,32 @@ public class PlayerStats : MonoBehaviour
         {
             return false;
         }
+    }
+
+    
+
+    public void GetExp(int exp)//Nhận kinh nghiệm
+    {
+        currentExp += exp;
+        if (currentExp >= expToLevel)
+        {
+            LevelUp();
+        }
+    }
+
+    public void LevelUp()//Tăng cấp
+    {
+        currentExp -= expToLevel;
+        expToLevel = Mathf.RoundToInt(expToLevel * 1.2f);
+        level++;
+
+        //Tăng các chỉ số
+        maxHP += 5;
+        maxMP ++;
+        damage++;
+
+        currentHealth = maxHP;
+
+        SaveData.instance.SaveToJson();
     }
 }

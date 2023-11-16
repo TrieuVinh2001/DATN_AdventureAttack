@@ -193,6 +193,10 @@ public class PlayerController : MonoBehaviour
             foreach (Collider2D enemy in colliders)
             {
                 enemy.GetComponent<EnemyBase>().TakeDamage(playerStats.damage);
+                if (enemy.GetComponent<EnemyBase>().currentHealth <= 0)
+                {
+                    playerStats.GetExp(enemy.GetComponent<EnemyBase>().exp);
+                }
             }
         }
     }

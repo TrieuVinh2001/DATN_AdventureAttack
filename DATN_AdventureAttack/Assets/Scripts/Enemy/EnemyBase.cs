@@ -7,7 +7,8 @@ using TMPro;
 public class EnemyBase : MonoBehaviour
 {
     [SerializeField] protected float maxHealth;
-    protected float currentHealth;
+    public float currentHealth;
+    public int exp;
 
     [SerializeField] protected GameObject floatingText;
 

@@ -469,6 +469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  currentHealth: 0
+  exp: 1
   floatingText: {fileID: 7756940702022969286, guid: 22679ffcee8fcad4694a0a8bcb92c56d, type: 3}
   hpImage: {fileID: 2736571071060305334}
   hpEffectImage: {fileID: 3599857079954886326}

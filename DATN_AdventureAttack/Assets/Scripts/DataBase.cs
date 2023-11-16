@@ -10,4 +10,7 @@ public class DataBase
     public float currentHP;
     public float currentMP;
     public float damage;
+    public int level;
+    public int currentExp;
+    public int expToLevel;
 }
