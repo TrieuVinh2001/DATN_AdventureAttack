@@ -17,7 +17,12 @@ public class BulletPlayer : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<EnemyBase>().TakeDamage(damage);
+            EnemyBase enemy = collision.GetComponent<EnemyBase>();
+            enemy.TakeDamage(damage);
+            if (enemy.currentHealth <= 0)
+            {
+                GetComponentInParent<PlayerStats>().GetExp(enemy.exp);
+            }
             rb.velocity = Vector2.zero;
             GameObject bulletExplosion = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(bulletExplosion, 0.5f);

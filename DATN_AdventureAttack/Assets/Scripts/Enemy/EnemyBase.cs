@@ -9,6 +9,10 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] protected float maxHealth;
     public float currentHealth;
     public int exp;
+    [SerializeField] private int minCoin;
+    [SerializeField] private int maxCoin;
+    [SerializeField] private int countCoin;
+    [SerializeField] private GameObject coinPrefab;
 
     [SerializeField] protected GameObject floatingText;
 
@@ -47,6 +51,14 @@ public class EnemyBase : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Death();
+            int count = Random.Range(countCoin - 1, countCoin + 2);
+            for(int i = 0; i < count; i++)
+            {
+                GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                coin.GetComponent<Coin>().minCoin = minCoin;
+                coin.GetComponent<Coin>().maxCoin = maxCoin;
+            }
+
             Destroy(gameObject);
         }
     }

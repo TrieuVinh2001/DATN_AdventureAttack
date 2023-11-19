@@ -1,10 +1,11 @@
 {
-    "maxHP": 50.0,
-    "maxMP": 20.0,
-    "currentHP": 0.0,
-    "currentMP": 0.0,
+    "maxHP": 55.0,
+    "maxMP": 21.0,
+    "currentHP": 49.0,
+    "currentMP": 16.0,
     "damage": 1.0,
-    "level": 1,
-    "currentExp": 3,
-    "expToLevel": 20
+    "level": 2,
+    "currentExp": 5,
+    "expToLevel": 24,
+    "coin": 10
 }

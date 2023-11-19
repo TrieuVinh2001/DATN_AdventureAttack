@@ -11,8 +11,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private float maxHP;
     [SerializeField] private float maxMP;
     public float damage;
-    private float currentHealth;
-    private float currentMana;
+    private float currentHP;
+    private float currentMP;
 
     [SerializeField] private int level;
     [SerializeField] private int currentExp;
@@ -63,8 +63,8 @@ public class PlayerStats : MonoBehaviour
         level = data.level;
         currentExp = data.currentExp;
         expToLevel = data.expToLevel;
-        currentHealth = maxHP;
-        currentMana = maxMP;
+        currentHP = maxHP;
+        currentMP = maxMP;
         StartCoroutine(ManaRecovery());
     }
 
@@ -82,7 +82,7 @@ public class PlayerStats : MonoBehaviour
 
     public void ManaConsumption(float mana)
     {
-        currentMana -= mana;
+        currentMP -= mana;
     }
 
     private IEnumerator ManaRecovery()//Hồi mana mỗi 3s
@@ -90,9 +90,9 @@ public class PlayerStats : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(3f);
-            if (currentMana + 1 <= maxMP)
+            if (currentMP + 1 <= maxMP)
             {
-                currentMana += 1;
+                currentMP += 1;
             }
         }
         
@@ -100,13 +100,13 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionHealth()
     {
-        if (currentHealth + 10 > maxHP)
+        if (currentHP + 10 > maxHP)
         {
-            currentHealth = maxHP;
+            currentHP = maxHP;
         }
         else
         {
-            currentHealth += 10;
+            currentHP += 10;
         }
     }
 
@@ -114,8 +114,8 @@ public class PlayerStats : MonoBehaviour
     {
         GameObject point = Instantiate(floatingText, transform.position, Quaternion.identity);
         point.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + damage;
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        currentHP -= damage;
+        if (currentHP <= 0)
         {
             //Death();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -125,8 +125,8 @@ public class PlayerStats : MonoBehaviour
 
     private void HealthBar()
     {
-        hpImage.fillAmount = currentHealth / maxHP;
-        hpText.text = "HP: " + currentHealth + "/" + maxHP;
+        hpImage.fillAmount = currentHP / maxHP;
+        hpText.text = "HP: " + currentHP + "/" + maxHP;
 
         if (hpEffectImage.fillAmount > hpImage.fillAmount)
         {
@@ -140,8 +140,8 @@ public class PlayerStats : MonoBehaviour
 
     private void ManaBar()
     {
-        mpImage.fillAmount = currentMana / maxMP;
-        mpText.text = "MP: " + currentMana + "/" + maxMP;
+        mpImage.fillAmount = currentMP / maxMP;
+        mpText.text = "MP: " + currentMP + "/" + maxMP;
 
         if (mpEffectImage.fillAmount > mpImage.fillAmount)
         {
@@ -182,7 +182,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack4()
     {
-        if(timeCooldown4 < 0 && currentMana - manaAttack4 > 0)
+        if(timeCooldown4 < 0 && currentMP - manaAttack4 > 0)
         {
             return true;
         }
@@ -194,7 +194,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack5()
     {
-        if (timeCooldown5 < 0 && currentMana - manaAttack5 > 0)
+        if (timeCooldown5 < 0 && currentMP - manaAttack5 > 0)
         {
             return true;
         }
@@ -206,7 +206,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack6()
     {
-        if (timeCooldown6 < 0 && currentMana - manaAttack6 > 0)
+        if (timeCooldown6 < 0 && currentMP - manaAttack6 > 0)
         {
             return true;
         }
@@ -228,7 +228,32 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    
+
+    public void UsePotionHP(float hp)
+    {
+
+        if (currentHP + hp < maxHP)
+        {
+            currentHP += hp;
+        }
+        else
+        {
+            currentHP = maxHP;
+        }
+        
+    }
+
+    public void UsePotionMP(float mp)
+    {
+        if (currentMP + mp < maxMP)
+        {
+            currentMP += mp;
+        }
+        else
+        {
+            currentMP = maxMP;
+        }
+    }
 
     public void GetExp(int exp)//Nhận kinh nghiệm
     {
@@ -250,8 +275,40 @@ public class PlayerStats : MonoBehaviour
         maxMP ++;
         damage++;
 
-        currentHealth = maxHP;
+        currentHP = maxHP;
+        currentMP = maxMP;
+
+        //Cập nhật dữ liệu trong data
+        SaveDataPlayer();
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveDataPlayer();
+    }
+
+    private void SaveDataPlayer()
+    {
+        DataBase data = SaveData.instance.data;
+        data.maxHP = maxHP;
+        data.maxMP = maxMP;
+        data.currentHP = currentHP;
+        data.currentMP = currentMP;
+        data.damage = damage;
+        data.level = level;
+        data.currentExp = currentExp;
+        data.expToLevel = expToLevel;
 
         SaveData.instance.SaveToJson();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Coin"))
+        {
+            GameManager.instance.GetCoin(collision.GetComponent<Coin>().coin);
+            Destroy(collision.gameObject);
+        }
     }
 }

@@ -13,4 +13,5 @@ public class DataBase
     public int level;
     public int currentExp;
     public int expToLevel;
+    public int coin;
 }
