@@ -95,15 +95,29 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             Jump();
-            SaveData.instance.SaveToJson();
         }
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             Dash();
         }
-        else if (Input.GetKeyDown(KeyCode.Q) && isGround && playerStats.CanAttack())
+        else if (Input.GetKeyDown(KeyCode.Q) && playerStats.CanAttack())
         {
-            playerStats.AttackCombo();
+            if (isGround)
+            {
+                playerStats.AttackCombo();
+                if (timeCounter < 0)
+                {
+                    comboCounter = 0;
+                }
+                isAttack = true;
+                attackStarted = true;
+            }
+            else if (!isGround)
+            {
+                anim.SetTrigger("AttackSky");
+                doubleJump = false;//Khi tấn công trên không thì k thể nhảy 2 lần
+            }
+
             Attack();
         }
         else if (Input.GetKeyDown(KeyCode.E) && isGround && playerStats.CanAttack4())
@@ -181,12 +195,6 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-        if (timeCounter < 0)
-        {
-            comboCounter = 0;
-        }
-        isAttack = true;
-        attackStarted = true;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(pointAttack.position, zoneAttack, enemyLayer);
         if (colliders.Length > 0)
         {
@@ -212,10 +220,12 @@ public class PlayerController : MonoBehaviour
     private void PlayerAnimation()
     {
         anim.SetFloat("xInput", Mathf.Abs(xInput));
+        anim.SetFloat("yVelocity", rb.velocity.y);
         anim.SetBool("Jump", isGround);
         anim.SetBool("Dash", dashTime > 0);
         anim.SetBool("Attack", isAttack);
         anim.SetInteger("ComboCounter", comboCounter);
+        
     }
 
     private void Death()

@@ -4,22 +4,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+[System.Serializable]
+public class ItemDrop
+{
+    [Range(0f, 1f)]
+    public float rate;
+    public GameObject itemPrefab;
+}
+
 public class EnemyBase : MonoBehaviour
 {
+    [Header("Stats")]
     [SerializeField] protected float maxHealth;
     public float currentHealth;
     public int exp;
+
+    [Header("Drop Coin")]
     [SerializeField] private int minCoin;
     [SerializeField] private int maxCoin;
     [SerializeField] private int countCoin;
     [SerializeField] private GameObject coinPrefab;
 
-    [SerializeField] protected GameObject floatingText;
+    [Header("Drop Item")]
+    [SerializeField] private ItemDrop[] itemDrops;
 
+    [Header("UI")]
     [SerializeField] private Image hpImage;
     [SerializeField] private Image hpEffectImage;
     [SerializeField] private float hurtSpeed = 0.1f;
 
+    [SerializeField] protected GameObject floatingText;
     private SpriteRenderer sp;
 
     protected virtual void Start()
@@ -51,16 +65,41 @@ public class EnemyBase : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Death();
-            int count = Random.Range(countCoin - 1, countCoin + 2);
-            for(int i = 0; i < count; i++)
-            {
-                GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
-                coin.GetComponent<Coin>().minCoin = minCoin;
-                coin.GetComponent<Coin>().maxCoin = maxCoin;
-            }
-
+            DropCoin();
+            DropItem();
             Destroy(gameObject);
         }
+    }
+
+    public void DropCoin()
+    {
+        int count = Random.Range(countCoin - 1, countCoin + 2);
+        for (int i = 0; i < count; i++)
+        {
+            GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+            coin.GetComponent<Coin>().minCoin = minCoin;
+            coin.GetComponent<Coin>().maxCoin = maxCoin;
+        }
+    }
+
+    private List<GameObject> itemRandomDrop;
+    public void DropItem()
+    {
+        if (itemDrops == null || itemDrops.Length <= 0) return;//Nếu k có item thì thôi
+        itemRandomDrop = new List<GameObject>();//Tạo list mới
+        float rateRandom = Random.Range(0f, 1f);//Tỉ lệ ngẫu nhiên
+        for (int i = 0; i < itemDrops.Length; i++)
+        {
+            if (itemDrops[i].rate <= rateRandom)//Nếu tỉ lệ của item <= tỉ lệ ngẫu nhiên
+            {
+                itemRandomDrop.Add(itemDrops[i].itemPrefab);//Thêm prefab item vào list
+            }
+        }
+
+        if (itemRandomDrop.Count <= 0) return;//Nếu list trống
+        //Tạo item
+        var randomItem = itemRandomDrop[Random.Range(0, itemRandomDrop.Count)];
+        Instantiate(randomItem, transform.position, Quaternion.identity);
     }
 
     public virtual void Death()
