@@ -17,9 +17,9 @@ public class EnemyPatrol : EnemyBase
     private float timeCooldownAttack;
     [SerializeField] private float timeAttack;
     public bool isAttack = true;
-    private PlayerController player;
+    [HideInInspector] public PlayerController player;
     private float distance;
-    private bool attackMode;
+    public bool attackMode;
     public bool melee;
     private bool isWalk;
     private bool isDeath;
@@ -59,6 +59,20 @@ public class EnemyPatrol : EnemyBase
                 else
                 {
                     MovePoint();
+                }
+            }
+
+            if (player)
+            {
+                if ((transform.position.x - player.transform.position.x) < 0 && facingRight)
+                {
+                    Flip();
+                    melee = true;
+                }
+                else if ((transform.position.x - player.transform.position.x) > 0 && !facingRight)
+                {
+                    Flip();
+                    melee = true;
                 }
             }
 
@@ -121,8 +135,9 @@ public class EnemyPatrol : EnemyBase
         }
         else if ((transform.position.x - target.transform.position.x) > 0 && !facingRight)
         {
-            Flip();
+            Flip();   
         }
+        
     }
 
     private void Move()
@@ -132,13 +147,17 @@ public class EnemyPatrol : EnemyBase
         transform.position = new Vector3(tranf.x, transform.position.y);
         if ((transform.position.x - player.transform.position.x) < 0 && facingRight)
         {
-
             Flip();
-
+            melee = true;
         }
         else if ((transform.position.x - player.transform.position.x) > 0 && !facingRight)
         {
             Flip();
+            melee = true;
+        }
+        else
+        {
+            melee = false;
         }
     }
 
@@ -169,7 +188,6 @@ public class EnemyPatrol : EnemyBase
         for(int i = 1; i<=coutAttack ; i++)
         {
             anim.SetBool("Attack" + i, isAttack);
-            Debug.Log("Attack" + i);
         }
         
         isAttack = true;

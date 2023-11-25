@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             EnemyBase enemy = collision.GetComponent<EnemyBase>();
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage(GetComponentInParent<PlayerStats>().damage+damage);
             if (enemy.currentHealth <= 0)
             {
                 GetComponentInParent<PlayerStats>().GetExp(enemy.exp);

@@ -10,6 +10,7 @@ public class BulletEnemy : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, 5f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +19,10 @@ public class BulletEnemy : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             collision.GetComponent<PlayerStats>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("Ground"))
+        {
             Destroy(gameObject);
         }
     }

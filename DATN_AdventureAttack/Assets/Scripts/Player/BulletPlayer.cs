@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletPlayer : MonoBehaviour
 {
-    [SerializeField] private float damage;
+    public float damage;
     [SerializeField] private GameObject explosion;
     private Rigidbody2D rb;
 

@@ -28,7 +28,7 @@ public class EnemyShoot : MonoBehaviour
         timeCooldown -= Time.deltaTime;
         canShoot = enemyPatrol.isAttack && timeCooldown < 0;
 
-        if (!enemyPatrol.melee)
+        if (!enemyPatrol.melee && enemyPatrol.player)
         {
             Shoot();
         }

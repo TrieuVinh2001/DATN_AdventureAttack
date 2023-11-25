@@ -720,7 +720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
-  exp: 5
+  exp: 6
   minCoin: 3
   maxCoin: 5
   countCoin: 3
@@ -741,5 +741,11 @@ MonoBehaviour:
   point:
   - {fileID: 1790118649001452563}
   - {fileID: 1790118649726365801}
+  target: {fileID: 0}
+  coutAttack: 1
   timeAttack: 3
+  isAttack: 1
+  player: {fileID: 0}
+  attackMode: 0
+  melee: 1
   boxAttack: {fileID: 1790118649346067604}

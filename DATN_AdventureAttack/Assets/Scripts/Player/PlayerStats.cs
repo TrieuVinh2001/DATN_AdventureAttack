@@ -60,6 +60,7 @@ public class PlayerStats : MonoBehaviour
         DataBase data = SaveData.instance.data;
         maxHP = data.maxHP;
         maxMP = data.maxMP;
+        damage = data.damage;
         level = data.level;
         currentExp = data.currentExp;
         expToLevel = data.expToLevel;
@@ -100,13 +101,25 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionHealth()
     {
-        if (currentHP + 10 > maxHP)
+        if (currentHP + 20 > maxHP)
         {
             currentHP = maxHP;
         }
         else
         {
-            currentHP += 10;
+            currentHP += 20;
+        }
+    }
+
+    public void UsePotionMana()
+    {
+        if (currentMP + 10 > maxMP)
+        {
+            currentMP = maxMP;
+        }
+        else
+        {
+            currentMP += 10;
         }
     }
 

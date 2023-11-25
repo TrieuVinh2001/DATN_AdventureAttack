@@ -141,7 +141,7 @@ MonoBehaviour:
   bulletSpeed: 2
   damage: 2
   zoneAttack: 1
-  zoneShoot: 5
+  zoneShoot: 6
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

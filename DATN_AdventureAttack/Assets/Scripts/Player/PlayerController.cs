@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject ballSpell = Instantiate(lightningBallPrefab, new Vector3(pointBullet.position.x * facingDir, pointBullet.position.y, 0), Quaternion.Euler(0, 0, facingRight ? 360 : 180));
         ballSpell.GetComponent<Rigidbody2D>().velocity = Vector2.right * bulletSpeed * facingDir;
+        ballSpell.GetComponent<BulletPlayer>().damage = playerStats.damage+2;
     }
 
     // Start is called before the first frame update
@@ -142,6 +143,11 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             playerStats.UsePotionHealth();
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            playerStats.UsePotionMana();
         }
     }
 
