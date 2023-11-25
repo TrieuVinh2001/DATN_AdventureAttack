@@ -1,8 +1,8 @@
 {
     "maxHP": 60.0,
     "maxMP": 22.0,
-    "currentHP": 50.0,
-    "currentMP": 19.0,
+    "currentHP": 49.0,
+    "currentMP": 22.0,
     "damage": 1.0,
     "level": 3,
     "currentExp": 13,

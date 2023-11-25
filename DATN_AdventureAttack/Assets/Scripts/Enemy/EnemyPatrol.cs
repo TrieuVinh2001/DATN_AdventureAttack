@@ -10,15 +10,17 @@ public class EnemyPatrol : EnemyBase
     [SerializeField] private float zoneMovePlayer;
     [SerializeField] private Transform[] point;
     private int pointIndex;
-    private Transform target;
+    [HideInInspector] public Transform target;
 
     [Header("Attack")]
+    [SerializeField] private int coutAttack;
     private float timeCooldownAttack;
     [SerializeField] private float timeAttack;
-    private bool isAttack = true;
+    public bool isAttack = true;
     private PlayerController player;
     private float distance;
     private bool attackMode;
+    public bool melee;
     private bool isWalk;
     private bool isDeath;
 
@@ -150,16 +152,26 @@ public class EnemyPatrol : EnemyBase
 
     private void Attack()
     {
+        int attackIndex = Random.Range(1, coutAttack+1);
+        anim.SetBool("Attack"+attackIndex, isAttack);
+        isAttack = false;
+    }
+
+    private void AttackAnimEvent()
+    {
         boxAttack.enabled = true;
         timeCooldownAttack = timeAttack;
-        anim.SetBool("Attack", isAttack);
-        isAttack = false;
     }
 
     private void EndAttack()
     {
         boxAttack.enabled = false;
-        anim.SetBool("Attack", isAttack);
+        for(int i = 1; i<=coutAttack ; i++)
+        {
+            anim.SetBool("Attack" + i, isAttack);
+            Debug.Log("Attack" + i);
+        }
+        
         isAttack = true;
 
     }

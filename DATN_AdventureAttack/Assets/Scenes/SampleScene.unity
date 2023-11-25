@@ -17518,7 +17518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3783371030084425510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.63, y: -0.41, z: 0}
+  m_LocalPosition: {x: 19.63, y: 0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17538,7 +17538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3783371030084425497}
   m_Layer: 7
-  m_Name: BossMain
+  m_Name: TurtleKingMain
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17610,7 +17610,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 0.15}
+  m_SizeDelta: {x: 2, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3783371030604399735
 CanvasRenderer:
@@ -17701,8 +17701,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.5}
-  m_SizeDelta: {x: 2, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1.2}
+  m_SizeDelta: {x: 2.5, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3783371030717002015
 GameObject:
@@ -17789,7 +17789,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 0.15}
+  m_SizeDelta: {x: 2, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3783371030743129467
 CanvasRenderer:
@@ -17807,7 +17807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3783371030870422862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 8.15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17896,7 +17896,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 0.15}
+  m_SizeDelta: {x: 2, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3783371030960185869
 CanvasRenderer:
@@ -18002,7 +18002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3783371031226196280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -8.84, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18050,7 +18050,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1283429186, guid: 176b9c69121ec604aac7d61ab5118e6e, type: 3}
+  m_Sprite: {fileID: -1669461560, guid: f279d9805140c4a45be3d0277e2edd6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18061,27 +18061,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3783371031484831785
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3783371031484831794}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cfb33f6fd18f4cf4aa3563fc816e8423, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3783371031484831794
 GameObject:
   m_ObjectHideFlags: 0
@@ -18092,12 +18071,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3783371031484831797}
   - component: {fileID: 3783371031484831784}
-  - component: {fileID: 3783371031484831785}
   - component: {fileID: 3783371031484831798}
   - component: {fileID: 3783371031484831799}
+  - component: {fileID: 3783371031484831800}
   - component: {fileID: 3783371031484831796}
+  - component: {fileID: 3783371031484831801}
   m_Layer: 7
-  m_Name: Boss
+  m_Name: TurtleKing
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18115,11 +18095,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3fa4c305864d9408b18e56cb837eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 100
   currentHealth: 0
-  exp: 5
-  minCoin: 3
-  maxCoin: 5
+  exp: 100
+  minCoin: 50
+  maxCoin: 100
   countCoin: 3
   coinPrefab: {fileID: 4772694722107197944, guid: 0d0d5a9a513e9df4d929493831e59233, type: 3}
   itemDrops:
@@ -18133,12 +18113,16 @@ MonoBehaviour:
   floatingText: {fileID: 7756940702022969286, guid: 22679ffcee8fcad4694a0a8bcb92c56d, type: 3}
   hitPrefab: {fileID: 4925672234778145095, guid: 50a29d2457d0ccd4ea3ca001faa55de9, type: 3}
   moveSpeed: 1
-  zoneAttack: 1.2
-  zoneMovePlayer: 8
+  zoneAttack: 3
+  zoneMovePlayer: 10
   point:
   - {fileID: 3783371030870422849}
   - {fileID: 3783371031226196283}
+  target: {fileID: 0}
+  coutAttack: 2
   timeAttack: 3
+  isAttack: 1
+  melee: 0
   boxAttack: {fileID: 3783371031047265734}
 --- !u!4 &3783371031484831797
 Transform:
@@ -18148,7 +18132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3783371031484831794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.42, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18192,9 +18176,45 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.056041718, y: -0.10150346}
-  m_Size: {x: 0.74692535, y: 0.93184453}
+  m_Offset: {x: -0.2462349, y: -0.18169928}
+  m_Size: {x: 1.6969376, y: 2.1532874}
   m_Direction: 0
+--- !u!95 &3783371031484831800
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783371031484831794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 053a93c963876ef4f8e6c3afe7721944, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3783371031484831801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783371031484831794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5dfd555b91efb42b660f4c93daff8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6779506362492744497, guid: 5a159a5630d901f48afa6077900dd2e4, type: 3}
+  bulletSpeed: 3
+  timeShoot: 10
 --- !u!1 &3783371031527451818
 GameObject:
   m_ObjectHideFlags: 0
@@ -18225,7 +18245,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1265912, y: -0.034777403}
+  m_Offset: {x: 0.23905754, y: -0.13658714}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -18236,7 +18256,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.275664, y: 1.0695548}
+  m_Size: {x: 19.9595, y: 2.2040052}
   m_EdgeRadius: 0
 --- !u!4 &3783371031527451821
 Transform:
