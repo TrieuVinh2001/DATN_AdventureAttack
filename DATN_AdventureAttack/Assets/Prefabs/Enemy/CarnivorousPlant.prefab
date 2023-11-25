@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7976788660351005855
 Transform:
   m_ObjectHideFlags: 0
@@ -124,10 +124,20 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   exp: 3
-  floatingText: {fileID: 7756940702022969286, guid: 22679ffcee8fcad4694a0a8bcb92c56d, type: 3}
+  minCoin: 2
+  maxCoin: 4
+  countCoin: 3
+  coinPrefab: {fileID: 4772694722107197944, guid: 0d0d5a9a513e9df4d929493831e59233, type: 3}
+  itemDrops:
+  - rate: 0.2
+    itemPrefab: {fileID: 5663073640960574921, guid: 66ac4e97507cbf54ca731e9033bc3768, type: 3}
+  - rate: 0.2
+    itemPrefab: {fileID: 7496319159745985914, guid: b2b2f5e7628442b4f90fed3543e996c6, type: 3}
   hpImage: {fileID: 7976788661543578304}
   hpEffectImage: {fileID: 7976788661126328547}
   hurtSpeed: 0.005
+  floatingText: {fileID: 7756940702022969286, guid: 22679ffcee8fcad4694a0a8bcb92c56d, type: 3}
+  hitPrefab: {fileID: 4925672234778145095, guid: 50a29d2457d0ccd4ea3ca001faa55de9, type: 3}
   bulletSpeed: 2
   damage: 2
   zoneAttack: 1

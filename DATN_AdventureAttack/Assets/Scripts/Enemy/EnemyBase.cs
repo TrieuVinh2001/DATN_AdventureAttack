@@ -34,6 +34,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] private float hurtSpeed = 0.1f;
 
     [SerializeField] protected GameObject floatingText;
+    [SerializeField] protected GameObject hitPrefab;
     private SpriteRenderer sp;
 
     protected virtual void Start()
@@ -60,10 +61,12 @@ public class EnemyBase : MonoBehaviour
     {
         GameObject point = Instantiate(floatingText, transform.position, Quaternion.identity);
         point.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + dame;
+        Instantiate(hitPrefab, transform.position, Quaternion.identity);
         StartCoroutine(DamageColor());
         currentHealth -= dame;
         if (currentHealth <= 0)
         {
+            
             //Death();
             DropCoin();
             DropItem();

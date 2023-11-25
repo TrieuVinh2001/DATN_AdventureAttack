@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
         {
             Dash();
         }
-        else if (Input.GetKeyDown(KeyCode.Q) && playerStats.CanAttack())
+        else if (Input.GetKeyDown(KeyCode.J) && playerStats.CanAttack())
         {
             if (isGround)
             {
@@ -120,19 +120,19 @@ public class PlayerController : MonoBehaviour
 
             Attack();
         }
-        else if (Input.GetKeyDown(KeyCode.E) && isGround && playerStats.CanAttack4())
+        else if (Input.GetKeyDown(KeyCode.U) && isGround && playerStats.CanAttack4())
         {
             playerStats.Attack4();
             attackStarted = true;
             anim.SetTrigger("Attack4");
         }
-        else if (Input.GetKeyDown(KeyCode.R) && isGround && playerStats.CanAttack5())
+        else if (Input.GetKeyDown(KeyCode.I) && isGround && playerStats.CanAttack5())
         {
             playerStats.Attack5();
             attackStarted = true;
             anim.SetTrigger("Attack5");
         }
-        else if (Input.GetKeyDown(KeyCode.T) && !isGround && playerStats.CanAttack6())
+        else if (Input.GetKeyDown(KeyCode.O) && !isGround && playerStats.CanAttack6())
         {
             playerStats.Attack6();
             anim.SetTrigger("Attack6");

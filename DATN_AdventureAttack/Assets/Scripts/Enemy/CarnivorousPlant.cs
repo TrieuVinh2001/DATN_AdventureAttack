@@ -38,9 +38,6 @@ public class CarnivorousPlant : EnemyBase
     {
         base.Update();
 
-
-        
-        
         timeCooldownAttack -= Time.deltaTime;
         timeCooldownShoot -= Time.deltaTime;
 
@@ -66,6 +63,8 @@ public class CarnivorousPlant : EnemyBase
         }
         else if (canAttack && timeCooldownAttack < 0)
         {
+            RaycastHit2D col = Physics2D.Raycast(transform.position, Vector2.left * transform.localScale.x, zoneShoot, playerLayer);
+            target = col.collider.GetComponent<PlayerController>().transform;
             timeCooldownAttack = timeAttack;
             anim.SetTrigger("Attack"); 
         }

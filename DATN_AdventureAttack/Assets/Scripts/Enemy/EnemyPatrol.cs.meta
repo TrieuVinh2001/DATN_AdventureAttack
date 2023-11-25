@@ -3,7 +3,13 @@ guid: 1b3fa4c305864d9408b18e56cb837eb2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - coinPrefab: {instanceID: 0}
+  - hpImage: {instanceID: 0}
+  - hpEffectImage: {instanceID: 0}
+  - floatingText: {instanceID: 0}
+  - hitPrefab: {instanceID: 0}
+  - boxAttack: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
