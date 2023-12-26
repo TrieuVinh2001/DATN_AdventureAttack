@@ -57,6 +57,7 @@ public class PlayerStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         DataBase data = SaveData.instance.data;
         maxHP = data.maxHP;
         maxMP = data.maxMP;

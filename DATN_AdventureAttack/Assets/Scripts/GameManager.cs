@@ -17,13 +17,22 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        coin = SaveData.instance.data.coin;
+        coinText.text = "" + coin;
+
+        Time.timeScale = 1;
     }
 
     private void Start()
     {
-        coin = SaveData.instance.data.coin;
-        coinText.text = "" + coin;
+        
     }
 
     public void GetCoin(int coinCount)

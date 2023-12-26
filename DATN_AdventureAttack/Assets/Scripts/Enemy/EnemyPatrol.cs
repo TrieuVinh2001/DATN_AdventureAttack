@@ -185,7 +185,7 @@ public class EnemyPatrol : EnemyBase
     private void EndAttack()
     {
         boxAttack.enabled = false;
-        for(int i = 1; i<=coutAttack ; i++)
+        for(int i = 1; i<=coutAttack; i++)
         {
             anim.SetBool("Attack" + i, isAttack);
         }
