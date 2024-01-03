@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
+    [HideInInspector] public Vector3 posLoadDoor;
+
     [Header("Stats")]
     [SerializeField] private float maxHP;
     [SerializeField] private float maxMP;
@@ -65,8 +67,12 @@ public class PlayerStats : MonoBehaviour
         level = data.level;
         currentExp = data.currentExp;
         expToLevel = data.expToLevel;
-        currentHP = maxHP;
-        currentMP = maxMP;
+        currentHP = data.currentHP;
+        currentMP = data.currentMP;
+        posLoadDoor = data.posLoadDoor;
+
+        transform.position = posLoadDoor;
+
         StartCoroutine(ManaRecovery());
     }
 
@@ -302,7 +308,7 @@ public class PlayerStats : MonoBehaviour
         SaveDataPlayer();
     }
 
-    private void SaveDataPlayer()
+    public void SaveDataPlayer()
     {
         DataBase data = SaveData.instance.data;
         data.maxHP = maxHP;
@@ -313,6 +319,7 @@ public class PlayerStats : MonoBehaviour
         data.level = level;
         data.currentExp = currentExp;
         data.expToLevel = expToLevel;
+        data.posLoadDoor = posLoadDoor;
 
         SaveData.instance.SaveToJson();
     }

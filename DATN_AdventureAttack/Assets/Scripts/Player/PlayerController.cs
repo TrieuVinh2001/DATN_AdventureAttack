@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         ballSpell.GetComponent<BulletPlayer>().damage = playerStats.damage+2;
     }
 
+
     // Start is called before the first frame update
     void Start()
     {

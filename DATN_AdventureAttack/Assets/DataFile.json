@@ -1,11 +1,16 @@
 {
-    "maxHP": 55.0,
-    "maxMP": 16.0,
-    "currentHP": 55.0,
-    "currentMP": 16.0,
-    "damage": 2.0,
-    "level": 2,
-    "currentExp": 8,
-    "expToLevel": 24,
-    "coin": 46
+    "maxHP": 60.0,
+    "maxMP": 17.0,
+    "currentHP": 52.0,
+    "currentMP": 17.0,
+    "damage": 3.0,
+    "level": 3,
+    "currentExp": 1,
+    "expToLevel": 29,
+    "coin": 91,
+    "posLoadDoor": {
+        "x": 139.0,
+        "y": -3.200000047683716,
+        "z": 0.0
+    }
 }

@@ -14,4 +14,5 @@ public class DataBase
     public int currentExp;
     public int expToLevel;
     public int coin;
+    public Vector3 posLoadDoor;
 }
