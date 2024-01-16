@@ -12,7 +12,7 @@ public class Door : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerStats>().posLoadDoor = pos;
+            collision.GetComponent<PlayerStats>().data.posLoadDoor = pos;
             collision.GetComponent<PlayerStats>().SaveDataPlayer();
             SceneManager.LoadScene(sceneName);
         }

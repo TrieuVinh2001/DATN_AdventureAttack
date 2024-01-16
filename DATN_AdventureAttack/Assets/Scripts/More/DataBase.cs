@@ -15,4 +15,6 @@ public class DataBase
     public int expToLevel;
     public int coin;
     public Vector3 posLoadDoor;
+    public int countPotionHP;
+    public int countPotionMP;
 }

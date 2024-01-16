@@ -1,16 +1,18 @@
 {
-    "maxHP": 60.0,
-    "maxMP": 17.0,
-    "currentHP": 52.0,
-    "currentMP": 17.0,
-    "damage": 3.0,
-    "level": 3,
-    "currentExp": 1,
-    "expToLevel": 29,
-    "coin": 91,
+    "maxHP": 50.0,
+    "maxMP": 20.0,
+    "currentHP": 42.0,
+    "currentMP": 20.0,
+    "damage": 1.0,
+    "level": 1,
+    "currentExp": 2,
+    "expToLevel": 10,
+    "coin": 30,
     "posLoadDoor": {
-        "x": 139.0,
-        "y": -3.200000047683716,
+        "x": -17.0,
+        "y": -0.20000000298023225,
         "z": 0.0
-    }
+    },
+    "countPotionHP": 5,
+    "countPotionMP": 3
 }

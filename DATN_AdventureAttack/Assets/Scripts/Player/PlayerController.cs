@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject ballSpell = Instantiate(lightningBallPrefab, new Vector3(pointBullet.position.x * facingDir, pointBullet.position.y, 0), Quaternion.Euler(0, 0, facingRight ? 360 : 180));
         ballSpell.GetComponent<Rigidbody2D>().velocity = Vector2.right * bulletSpeed * facingDir;
-        ballSpell.GetComponent<BulletPlayer>().damage = playerStats.damage+2;
+        ballSpell.GetComponent<BulletPlayer>().damage = playerStats.data.damage+2;
     }
 
 
@@ -143,12 +143,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.H))
         {
-            playerStats.UsePotionHealth();
+            playerStats.UsePotionHP(40);
         }
 
         if (Input.GetKeyDown(KeyCode.N))
         {
-            playerStats.UsePotionMana();
+            playerStats.UsePotionMP(10);
         }
     }
 
@@ -207,7 +207,7 @@ public class PlayerController : MonoBehaviour
         {
             foreach (Collider2D enemy in colliders)
             {
-                enemy.GetComponent<EnemyBase>().TakeDamage(playerStats.damage);
+                enemy.GetComponent<EnemyBase>().TakeDamage(playerStats.data.damage);
                 if (enemy.GetComponent<EnemyBase>().currentHealth <= 0)
                 {
                     playerStats.GetExp(enemy.GetComponent<EnemyBase>().exp);

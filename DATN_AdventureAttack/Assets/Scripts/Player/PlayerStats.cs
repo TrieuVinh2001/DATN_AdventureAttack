@@ -7,19 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-    [HideInInspector] public Vector3 posLoadDoor;
-
-    [Header("Stats")]
-    [SerializeField] private float maxHP;
-    [SerializeField] private float maxMP;
-    public float damage;
-    private float currentHP;
-    private float currentMP;
-
-    [SerializeField] private int level;
-    [SerializeField] private int currentExp;
-    [SerializeField] private int expToLevel;
-
     private float timeCooldownAttack;
 
     [Header("ManaSkill")]
@@ -44,53 +31,45 @@ public class PlayerStats : MonoBehaviour
 
     [SerializeField] private GameObject floatingText;
 
-    [Header("UI")]
-    [SerializeField] private Image hpImage;
-    [SerializeField] private Image hpEffectImage;
-    [SerializeField] private Image mpImage;
-    [SerializeField] private Image mpEffectImage;
-    [SerializeField] private Image expImage;
-    [SerializeField] private float hurtSpeed = 0.005f;
-    [SerializeField] private TextMeshProUGUI hpText;
-    [SerializeField] private TextMeshProUGUI mpText;
-    [SerializeField] private TextMeshProUGUI expText;
+    
 
+    [HideInInspector] public DataBase data ;
+
+    private bool checkShop = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        data = SaveData.instance.data;
 
-        DataBase data = SaveData.instance.data;
-        maxHP = data.maxHP;
-        maxMP = data.maxMP;
-        damage = data.damage;
-        level = data.level;
-        currentExp = data.currentExp;
-        expToLevel = data.expToLevel;
-        currentHP = data.currentHP;
-        currentMP = data.currentMP;
-        posLoadDoor = data.posLoadDoor;
-
-        transform.position = posLoadDoor;
-
+        if(data.posLoadDoor != Vector3.zero)
+        {
+            transform.position = data.posLoadDoor;
+        }
+        
         StartCoroutine(ManaRecovery());
     }
 
     // Update is called once per frame
     void Update()
     {
-        HealthBar();
-        ManaBar();
-        ExpBar();
         timeCooldown4 -= Time.deltaTime;
         timeCooldown5 -= Time.deltaTime;
         timeCooldown6 -= Time.deltaTime;
         timeCooldownAttack -= Time.deltaTime;
+
+        if (checkShop)
+        {
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                GameManager.instance.OpenShop();
+            }
+        }
     }
 
     public void ManaConsumption(float mana)
     {
-        currentMP -= mana;
+        data.currentMP -= mana;
     }
 
     private IEnumerator ManaRecovery()//Hồi mana mỗi 3s
@@ -98,35 +77,10 @@ public class PlayerStats : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(3f);
-            if (currentMP + 1 <= maxMP)
+            if (data.currentMP + 1 <= data.maxMP)
             {
-                currentMP += 1;
+                data.currentMP += 1;
             }
-        }
-        
-    }
-
-    public void UsePotionHealth()
-    {
-        if (currentHP + 20 > maxHP)
-        {
-            currentHP = maxHP;
-        }
-        else
-        {
-            currentHP += 20;
-        }
-    }
-
-    public void UsePotionMana()
-    {
-        if (currentMP + 10 > maxMP)
-        {
-            currentMP = maxMP;
-        }
-        else
-        {
-            currentMP += 10;
         }
     }
 
@@ -134,8 +88,8 @@ public class PlayerStats : MonoBehaviour
     {
         GameObject point = Instantiate(floatingText, transform.position, Quaternion.identity);
         point.transform.GetChild(0).GetComponent<TextMeshPro>().text = "-" + damage;
-        currentHP -= damage;
-        if (currentHP <= 0)
+        data.currentHP -= damage;
+        if (data.currentHP <= 0)
         {
             //Death();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -143,41 +97,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void HealthBar()
-    {
-        hpImage.fillAmount = currentHP / maxHP;
-        hpText.text = "HP: " + currentHP + "/" + maxHP;
-
-        if (hpEffectImage.fillAmount > hpImage.fillAmount)
-        {
-            hpEffectImage.fillAmount -= hurtSpeed;
-        }
-        else
-        {
-            hpEffectImage.fillAmount = hpImage.fillAmount;
-        }
-    }
-
-    private void ManaBar()
-    {
-        mpImage.fillAmount = currentMP / maxMP;
-        mpText.text = "MP: " + currentMP + "/" + maxMP;
-
-        if (mpEffectImage.fillAmount > mpImage.fillAmount)
-        {
-            mpEffectImage.fillAmount -= hurtSpeed;
-        }
-        else
-        {
-            mpEffectImage.fillAmount = mpImage.fillAmount;
-        }
-    }
-
-    private void ExpBar()
-    {
-        expImage.fillAmount = (float)currentExp / expToLevel;
-        expText.text = "LV:" + level + "+" + Mathf.RoundToInt(((float)currentExp /expToLevel) * 100) + "%";
-    }
+   
 
     public void AttackCombo()
     {
@@ -202,7 +122,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack4()
     {
-        if(timeCooldown4 < 0 && currentMP - manaAttack4 > 0)
+        if(timeCooldown4 < 0 && data.currentMP - manaAttack4 > 0)
         {
             return true;
         }
@@ -214,7 +134,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack5()
     {
-        if (timeCooldown5 < 0 && currentMP - manaAttack5 > 0)
+        if (timeCooldown5 < 0 && data.currentMP - manaAttack5 > 0)
         {
             return true;
         }
@@ -226,7 +146,7 @@ public class PlayerStats : MonoBehaviour
 
     public bool CanAttack6()
     {
-        if (timeCooldown6 < 0 && currentMP - manaAttack6 > 0)
+        if (timeCooldown6 < 0 && data.currentMP - manaAttack6 > 0)
         {
             return true;
         }
@@ -251,34 +171,38 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionHP(float hp)
     {
-
-        if (currentHP + hp < maxHP)
+        if (data.countPotionHP <= 0) return;
+        data.countPotionHP -= 1;
+        if (data.currentHP + hp < data.maxHP)
         {
-            currentHP += hp;
+            data.currentHP += hp;
         }
         else
         {
-            currentHP = maxHP;
+            data.currentHP = data.maxHP;
         }
-        
+        SaveDataPlayer();
     }
 
     public void UsePotionMP(float mp)
     {
-        if (currentMP + mp < maxMP)
+        if (data.countPotionMP <= 0) return; 
+        data.countPotionMP -= 1;
+        if (data.currentMP + mp < data.maxMP)
         {
-            currentMP += mp;
+            data.currentMP += mp;
         }
         else
         {
-            currentMP = maxMP;
+            data.currentMP = data.maxMP;
         }
+        SaveDataPlayer();
     }
 
     public void GetExp(int exp)//Nhận kinh nghiệm
     {
-        currentExp += exp;
-        if (currentExp >= expToLevel)
+        data.currentExp += exp;
+        if (data.currentExp >= data.expToLevel)
         {
             LevelUp();
         }
@@ -286,20 +210,21 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelUp()//Tăng cấp
     {
-        currentExp -= expToLevel;
-        expToLevel = Mathf.RoundToInt(expToLevel * 1.2f);
-        level++;
+        data.currentExp -= data.expToLevel;
+        data.expToLevel = Mathf.RoundToInt(data.expToLevel * 1.2f);
+        data.level++;
 
         //Tăng các chỉ số
-        maxHP += 5;
-        maxMP ++;
-        damage++;
+        data.maxHP += 5;
+        data.maxMP ++;
+        data.damage++;
 
-        currentHP = maxHP;
-        currentMP = maxMP;
+        data.currentHP = data.maxHP;
+        data.currentMP = data.maxMP;
 
         //Cập nhật dữ liệu trong data
         SaveDataPlayer();
+        GameManager.instance.UpdateUI();
 
     }
 
@@ -310,17 +235,6 @@ public class PlayerStats : MonoBehaviour
 
     public void SaveDataPlayer()
     {
-        DataBase data = SaveData.instance.data;
-        data.maxHP = maxHP;
-        data.maxMP = maxMP;
-        data.currentHP = currentHP;
-        data.currentMP = currentMP;
-        data.damage = damage;
-        data.level = level;
-        data.currentExp = currentExp;
-        data.expToLevel = expToLevel;
-        data.posLoadDoor = posLoadDoor;
-
         SaveData.instance.SaveToJson();
     }
 
@@ -331,5 +245,19 @@ public class PlayerStats : MonoBehaviour
             GameManager.instance.GetCoin(collision.GetComponent<Coin>().coin);
             Destroy(collision.gameObject);
         }
+
+        if (collision.CompareTag("Shop"))
+        {
+            checkShop = true;
+        }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Shop"))
+        {
+            checkShop = false;
+        }
+    }
+
 }

@@ -8,6 +8,19 @@ using UnityEngine.UI;
 public class UI : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject shopPanel;
+
+    public void CloseShop()
+    {
+        shopPanel.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void ClosePause()
+    {
+        pausePanel.SetActive(false);
+        Time.timeScale = 1;
+    }
 
     public void Pause()
     {
