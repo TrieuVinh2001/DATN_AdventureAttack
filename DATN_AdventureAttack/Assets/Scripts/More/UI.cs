@@ -9,6 +9,7 @@ public class UI : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject shopPanel;
+    [SerializeField] private GameObject settingPanel;
 
     public void CloseShop()
     {
@@ -20,6 +21,11 @@ public class UI : MonoBehaviour
     {
         pausePanel.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void CloseSetting()
+    {
+        settingPanel.SetActive(false);
     }
 
     public void Pause()
@@ -36,17 +42,24 @@ public class UI : MonoBehaviour
 
     public void MainMenu()
     {
+        pausePanel.SetActive(false);
+        GameManager.instance.gameObject.SetActive(false);
         SceneManager.LoadScene("Menu");
     }
 
     public void Play()
     {
+        if (GameManager.instance)
+        {
+            GameManager.instance.gameObject.SetActive(true);
+        }
+        
         SceneManager.LoadScene("Main");
     }
 
     public void Setting()
     {
-
+        settingPanel.SetActive(true);
     }
 
     public void Exit()

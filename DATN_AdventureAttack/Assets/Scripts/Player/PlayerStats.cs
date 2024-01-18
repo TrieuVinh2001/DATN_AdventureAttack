@@ -29,9 +29,7 @@ public class PlayerStats : MonoBehaviour
     [HideInInspector] public float timeCooldown5;
     [HideInInspector] public float timeCooldown6;
 
-    [SerializeField] private GameObject floatingText;
-
-    
+    [SerializeField] private GameObject floatingText;    
 
     [HideInInspector] public DataBase data ;
 
@@ -91,8 +89,9 @@ public class PlayerStats : MonoBehaviour
         data.currentHP -= damage;
         if (data.currentHP <= 0)
         {
-            //Death();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Main");
+            data.currentHP = data.maxHP;
+            data.currentMP = data.maxMP;
             Destroy(gameObject);
         }
     }
@@ -102,6 +101,7 @@ public class PlayerStats : MonoBehaviour
     public void AttackCombo()
     {
         timeCooldownAttack = 0.5f;
+        AudioManager.instance.AttackSFX();
     }
 
     public void Attack4()
