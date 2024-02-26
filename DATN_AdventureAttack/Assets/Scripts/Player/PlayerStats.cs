@@ -171,7 +171,7 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionHP(float hp)
     {
-        if (data.countPotionHP <= 0) return;
+        if (data.countPotionHP <= 0 || data.currentHP == data.maxHP) return;
         data.countPotionHP -= 1;
         if (data.currentHP + hp < data.maxHP)
         {
@@ -186,7 +186,7 @@ public class PlayerStats : MonoBehaviour
 
     public void UsePotionMP(float mp)
     {
-        if (data.countPotionMP <= 0) return; 
+        if (data.countPotionMP <= 0 || data.currentMP == data.maxMP) return; 
         data.countPotionMP -= 1;
         if (data.currentMP + mp < data.maxMP)
         {
@@ -236,6 +236,7 @@ public class PlayerStats : MonoBehaviour
     public void SaveDataPlayer()
     {
         SaveData.instance.SaveToJson();
+        GameManager.instance.UpdateUI();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

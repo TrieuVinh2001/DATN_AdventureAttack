@@ -24,7 +24,7 @@ public class EnemyPatrol : EnemyBase
     private bool isWalk;
     private bool isDeath;
 
-    private Rigidbody2D rb;
+    //private Rigidbody2D rb;
     private Animator anim;
     [SerializeField] private BoxCollider2D boxAttack;
 
@@ -37,7 +37,7 @@ public class EnemyPatrol : EnemyBase
     protected override void Start()
     {
         base.Start();
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         canvas = GetComponentInChildren<Canvas>();
         target = point[pointIndex];

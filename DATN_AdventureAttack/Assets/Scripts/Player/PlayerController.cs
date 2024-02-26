@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-    
+    private Transform posEnemy;
 
     public void GetAnimCount(bool attack, int counter)
     {
@@ -57,10 +57,20 @@ public class PlayerController : MonoBehaviour
     public void AttackBallSpell()
     {
         GameObject ballSpell = Instantiate(lightningBallPrefab, new Vector3(pointBullet.position.x * facingDir, pointBullet.position.y, 0), Quaternion.Euler(0, 0, facingRight ? 360 : 180));
+        //Vector2 pos = new Vector2(posEnemy.position.x - transform.position.x, posEnemy.position.y - transform.position.y).normalized;
+        //ballSpell.GetComponent<Rigidbody2D>().velocity = pos * bulletSpeed;
         ballSpell.GetComponent<Rigidbody2D>().velocity = Vector2.right * bulletSpeed * facingDir;
         ballSpell.GetComponent<BulletPlayer>().damage = playerStats.data.damage+2;
     }
 
+    private void CheckEnemy()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(pointAttack.position, 20, enemyLayer);
+        if (colliders.Length > 0)
+        {
+            posEnemy = colliders[0].GetComponent<EnemyBase>().transform;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +83,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //CheckEnemy();
         isGround = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround);//Kiểm tra chạm đất
 
         InputKey();

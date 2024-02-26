@@ -19,6 +19,7 @@ public class BulletPlayer : MonoBehaviour
         {
             EnemyBase enemy = collision.GetComponent<EnemyBase>();
             enemy.TakeDamage(damage);
+            //enemy.TranformUp(5f);
             if (enemy.currentHealth <= 0)
             {
                 GetComponentInParent<PlayerStats>().GetExp(enemy.exp);

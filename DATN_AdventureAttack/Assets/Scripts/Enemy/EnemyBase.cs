@@ -36,11 +36,13 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] protected GameObject floatingText;
     [SerializeField] protected GameObject hitPrefab;
     private SpriteRenderer sp;
+    private Rigidbody2D rb;
 
     protected virtual void Start()
     {
         currentHealth = maxHealth;
         sp = GetComponentInChildren<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     protected virtual void Update()
@@ -72,6 +74,11 @@ public class EnemyBase : MonoBehaviour
             DropItem();
             Destroy(gameObject);
         }
+    }
+
+    public void TranformUp(float addForce)
+    {
+        rb.velocity = new Vector2(addForce, rb.velocity.y);
     }
 
     public void DropCoin()
